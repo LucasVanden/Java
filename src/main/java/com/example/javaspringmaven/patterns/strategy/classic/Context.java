@@ -1,0 +1,14 @@
+package com.example.javaspringmaven.patterns.strategy.classic;
+
+public class Context{
+
+    private Strategy strategy;
+
+    public void setStrategy(Strategy strategy){
+        this.strategy=strategy;
+    }
+    public void executeStrategy(int dato){
+        strategy.executeStrategy(dato);
+    }
+
+}
