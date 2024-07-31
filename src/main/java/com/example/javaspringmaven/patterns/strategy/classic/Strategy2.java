@@ -8,6 +8,4 @@ public class Strategy2 implements Strategy  {
         System.out.println("metodo strategy 2");
     }
 
-
-    
 } 

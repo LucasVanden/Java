@@ -7,7 +7,5 @@ public class Strategy1 implements Strategy  {
     public void executeStrategy(int dato) {
         System.out.println("metodo strategy 1");
     }
-
-
     
 } 

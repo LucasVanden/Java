@@ -1,0 +1,36 @@
+[
+    {
+        "year": 2023,
+        "monthValues": [
+            {
+                "month": 5,
+                "value": 100.0
+            },
+            {
+                "month": 6,
+                "value": 150.0
+            }
+        ]
+    },
+    {
+        "year": 2024,
+        "monthValues": [
+            {
+                "month": 3,
+                "value": 200.0
+            },
+            {
+                "month": 3,
+                "value": 250.0
+            },
+            {
+                "month": 3,
+                "value": 1.0
+            },
+            {
+                "month": 3,
+                "value": 250.0
+            }
+        ]
+    }
+]

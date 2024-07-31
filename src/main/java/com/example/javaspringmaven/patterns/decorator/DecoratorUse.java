@@ -5,10 +5,10 @@ public class DecoratorUse {
     public void use(String input){
 
         Printer simplePrinter = new SimplePrinter();
-		boolean upercase = true;
+		boolean uppercase = true;
 		boolean addAsterisk = true;
 
-				if (upercase){
+				if (uppercase){
 					simplePrinter = new UpperCasePrinterDecorator(simplePrinter);
 				}
 				if(addAsterisk){

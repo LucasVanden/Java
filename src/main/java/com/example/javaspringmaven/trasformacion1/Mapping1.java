@@ -30,9 +30,7 @@ public class Mapping1 {
 
 
    List<ObjetoFechaValor> as = listaObjetos.stream()
-         .collect(Collectors.groupingBy(
-                ObjetoFechaValor::getYear,
-                LinkedHashMap::new,
+         .collect(Collectors.groupingBy(ObjetoFechaValor::getYear,LinkedHashMap::new,
                 Collectors.collectingAndThen(
                         Collectors.maxBy(Comparator.comparing(ObjetoFechaValor::getFecha)),
                         Optional::get)

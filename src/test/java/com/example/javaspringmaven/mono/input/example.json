@@ -1,0 +1,33 @@
+[
+    {
+        "fecha": 20240629,
+        "empresa": "empresa1",
+        "moneda":"dolar",
+        "monto":11
+    },
+    {
+        "fecha": 20240630,
+        "empresa": "empresa1",
+        "moneda":"dolar",
+        "monto":13
+    },
+    {
+        "fecha": 20240629,
+        "empresa": "empresa2",
+        "moneda":"dolar",
+        "monto":19
+    },
+    {
+        "fecha": 20240630,
+        "empresa": "empresa2",
+        "moneda":"dolar",
+        "monto":29
+    },
+    {
+        "fecha": 20240629,
+        "empresa": "empresa3",
+        "moneda":"dolar",
+        "monto":57
+    }
+
+]

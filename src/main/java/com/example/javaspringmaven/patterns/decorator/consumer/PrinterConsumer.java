@@ -13,7 +13,7 @@ public class PrinterConsumer {
         .map(input->uper.apply(input))
         .map(input->aste.apply(input));
 
-        impresora.print(output);
+        impresora.print(output.block());
         
         
     } 

@@ -8,12 +8,8 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Service
-@Scope("prototype")
 public class Factory {
     private final Map<String, ObjetInterface> myInterfaceMap;
 
