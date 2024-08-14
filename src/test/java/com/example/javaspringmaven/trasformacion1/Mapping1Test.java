@@ -3,7 +3,12 @@ package com.example.javaspringmaven.trasformacion1;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.time.LocalDate;
+import java.time.YearMonth;
+import java.time.format.DateTimeFormatter;
+import java.time.format.TextStyle;
 import java.util.List;
+import java.util.Locale;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -12,6 +17,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.format.annotation.DateTimeFormat;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import static org.junit.jupiter.api.Assertions.*;
@@ -44,5 +50,16 @@ public class Mapping1Test {
        JsonNode jsonStringExpected = objectMapper.readTree(expected);
 
        assertEquals( jsonStringExpected,resultExpected);
+    }
+    @Test
+    void testTrasformar2() throws IOException {
+
+        DateTimeFormatter formaterr = DateTimeFormatter.ofPattern("yyyyMM");
+        YearMonth date1 = YearMonth.parse("202408", formaterr);
+     
+         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM", new Locale("es", "ES"));
+        // LocalDate date = LocalDate.parse("20240501",formaterr);
+       
+       assertEquals( true,  YearMonth.now().equals(date1) );
     }
 }
